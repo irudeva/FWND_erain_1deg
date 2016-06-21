@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 from ecmwfapi import ECMWFDataServer
 server = ECMWFDataServer()
-for yr in range(2013,2016) :
+for yr in range(2007,2009) :
   server.retrieve({
     "class": "ei",
     "dataset": "interim",
     "date": "%.4d-01-01/to/%.4d-12-31" % (yr,yr),
     "expver": "1",
-    "grid": "0.75/0.75",
+    "grid": "1./1.",
     "levtype": "sfc",
     "param": "165.128/166.128",
     "step": "0",
