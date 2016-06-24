@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 from ecmwfapi import ECMWFDataServer
 server = ECMWFDataServer()
+<<<<<<< Updated upstream
 for yr in range(2007,2009) :
+=======
+for yr in range(2009,2010) :
+>>>>>>> Stashed changes
   server.retrieve({
     "class": "ei",
     "dataset": "interim",
